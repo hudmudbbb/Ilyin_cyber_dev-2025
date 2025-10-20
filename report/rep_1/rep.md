@@ -30,6 +30,7 @@ $ sudo chmod -R 777 /var/www/html/dvwa/config/
 Процесс тестирования на проникновение с использованием **Burp Suite** для атаки на форму логина DVWA.
 
 ## Компоненты Burp Suite
+![Интерфейс](./images/r_3.jpg)
 
 ### 1. Интерфейс прокси (Proxy)
 - **Intercept включен** - перехватывает HTTP-запросы от браузера
@@ -38,6 +39,8 @@ $ sudo chmod -R 777 /var/www/html/dvwa/config/
 - **Cookies**: 
   - `security=impossible`
   - `PHPSESSID=a5d244f1fc42c8d466e9adabd868b916`
+
+![Прокси](./images/r_4.jpg)
 
 ### 2. Настройка Intruder атаки
 
@@ -52,6 +55,8 @@ $ sudo chmod -R 777 /var/www/html/dvwa/config/
   - space
   - hacker
 
+![Нагрузка 1](./images/r_5.jpg)
+
 #### Payload Set 2 (Полезная нагрузка 2)
 - **Тип**: Simple list
 - **Количество payloads**: 8
@@ -65,6 +70,8 @@ $ sudo chmod -R 777 /var/www/html/dvwa/config/
   - worm
   - fire
 
+![Нагрузка 2](./images/r_6.jpg)
+
 ### 3. Результаты Intruder атаки
 
 **Общее количество запросов**: 48 (6 пользователей × 8 паролей)
@@ -74,6 +81,8 @@ $ sudo chmod -R 777 /var/www/html/dvwa/config/
 - `mama:logic` - Status: 200, Length: 5063
 - `dad:reasoning` - Status: 200, Length: 5063
 - `admin:reasoning` - Status: 200, Length: 5063
+
+![Зарпросы](./images/r_7.jpg)
 
 ## Анализ результатов
 
