@@ -4,6 +4,7 @@
 
 # Клонирование репозитория
 $ sudo git clone https://github.com/digininja/DVWA.git dvwa
+![клонирование](./images/r_1)
 
 # Настройка прав доступа
 
