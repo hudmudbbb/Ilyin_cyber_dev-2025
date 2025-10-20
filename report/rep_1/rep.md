@@ -18,6 +18,8 @@ $ sudo chmod -R 755 /var/www/html/dvwa
 $ sudo chmod -R 777 /var/www/html/dvwa/hackable/uploads/
 $ sudo chmod -R 777 /var/www/html/dvwa/config/
 
+![Ввод команд выше](./images/r_2.jpg)
+
 В моем случае, они почему-то не могут быть найдены.
 
 # Задание 2
